@@ -17,6 +17,10 @@ gem 'coffee-rails', '~> 4.0.0'
 
 group :development, :test do
 	gem 'rspec-rails', '~>2.0'
+  gem 'tapp'
+  gem 'factory_girl_rails'
+  gem 'forgery'
+  gem 'timecop'
 end
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
