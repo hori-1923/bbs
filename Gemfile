@@ -15,7 +15,6 @@ gem 'coffee-rails', '~> 4.0.0'
 group :production do
 	# gem "therubyracer"
 	gem "mysql2"
-	gem "nokogiri", "1.6.0"
 end
 
 group :development, :test do
