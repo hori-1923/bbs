@@ -7,6 +7,7 @@ set :user, "hori"
 set :use_sudo, false
 set :deploy_to, "/var/www/bbs"
 set :deploy_via, :remote_cache
+set :bundle_flags, "--quiet"
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
