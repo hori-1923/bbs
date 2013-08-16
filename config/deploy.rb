@@ -2,7 +2,7 @@ require "bundler/capistrano"
 require "capistrano_colors"
 
 set :application, "bbs"
-set :repository,  "git@github.com:hori-1923/bbs.git"
+set :repository,  "https://github.com/hori-1923/bbs.git"
 set :user, "hori"
 set :use_sudo, false
 set :deploy_to, "/var/www/bbs"
@@ -35,4 +35,8 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
   	run "touch #{current_release}/tmp/restart.txt"
   end
+end
+
+before "bundle:install" do
+	run "BUNDLE_GEMFILE=#{current_path}/Gemfile bundle config build.mysql2 '--with-mysql-dir=/usr/local/mysql'"
 end
