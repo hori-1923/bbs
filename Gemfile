@@ -22,6 +22,13 @@ group :development, :test do
 	gem 'forgery'
 	gem 'timecop'
 end
+
+group :development do
+  gem 'capistrano', :require => false
+  gem 'capistrano-ext', :require => false
+  gem 'capistrano_colors', :require => false
+end
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

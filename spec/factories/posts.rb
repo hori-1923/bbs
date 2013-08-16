@@ -2,7 +2,8 @@
 
 FactoryGirl.define do
   factory :post do
-    name "MyString"
+  	name "MyString"
+#    name { Forgery(:basic).text}
     title "MyString"
     body "MyText"
   end
