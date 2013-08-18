@@ -3,7 +3,8 @@ class Api::V1::PostsController < ApplicationController
 	skip_before_action :verify_authenticity_token
 
   def index
-    @posts = Post.all
+    @posts = Post.find(:all, :include => [:user])
+    #@posts = Post.User.all
   end
   
   def create
@@ -37,6 +38,7 @@ class Api::V1::PostsController < ApplicationController
 
   private 
   def post_params
-  	params.require(:post).permit(:title, :body, :user_id)
+  	#params.require(:post).permit(:title, :body, :user_id)
+  	params.require(:post).permit(:title, :body)
   end
 end
