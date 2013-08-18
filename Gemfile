@@ -12,10 +12,10 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
 
-#group :production do
-# gem "therubyracer"
-#	gem "mysql2"
-#end
+group :production do
+ gem "therubyracer"
+ gem "mysql2"
+end
 
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
