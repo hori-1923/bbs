@@ -4,11 +4,11 @@
 RailsAdmin.config do |config|
 
 ### ここから
-  config.authorize_with do
-    authenticate_or_request_with_http_basic('aaaa') do |username, password|
-      username == 'admin' && password == 'password'
-    end
-  end
+#  config.authorize_with do
+#    authenticate_or_request_with_http_basic('aaaa') do |username, password|
+#      username == 'admin' && password == 'password'
+#    end
+#  end
 ### ここまで追加
 
   ################  Global configuration  ################
