@@ -25,7 +25,7 @@ end
 #	gem 'factory_girl_rails'
 #	gem 'forgery'
 #	gem 'timecop'
-#nd
+#end
 
 group :development do
   gem 'capistrano', :require => false
