@@ -4,17 +4,17 @@
 RailsAdmin.config do |config|
 
 ### ここから
-  config.authorize_with do
-    authenticate_or_request_with_http_basic('aaaa') do |username, password|
-      username == 'admin' && password == 'password'
-    end
-  end
+ # config.authorize_with do
+ #   authenticate_or_request_with_http_basic('aaaa') do |username, password|
+ #     username == 'admin' && password == 'password'
+ #   end
+ # end
 ### ここまで追加
 
   ################  Global configuration  ################
 
   # Set the admin name here (optional second array element will appear in red). For example:
-  config.main_app_name = ['a', 'Admin']
+  config.main_app_name = ['android_study', 'Admin']
   # or for a more dynamic name:
   # config.main_app_name = Proc.new { |controller| [Rails.application.engine_name.titleize, controller.params['action'].titleize] }
 
