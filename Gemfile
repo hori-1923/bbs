@@ -17,15 +17,15 @@ group :production do
  gem "mysql2"
 end
 
-#group :development, :test do
+group :development, :test do
 	# Use sqlite3 as the database for Active Record
-#	gem 'sqlite3'
-#	gem 'rspec-rails', '~>2.0'
-#	gem 'tapp'
-#	gem 'factory_girl_rails'
-#	gem 'forgery'
-#	gem 'timecop'
-#end
+	gem 'sqlite3'
+	gem 'rspec-rails', '~>2.0'
+	gem 'tapp'
+	gem 'factory_girl_rails'
+	gem 'forgery'
+	gem 'timecop'
+end
 
 group :development do
   gem 'capistrano', :require => false

@@ -1,5 +1,5 @@
-#json.array!(@users) do |user|
-  json.extract! @users, :user_id, :name
+json.array!(@users) do |user|
+  json.extract! user, :user_id, :name
   #json.foo 'bar'
   #json.current_time Time.now
 
@@ -9,4 +9,4 @@
   #	json.foo 'bar'
   #	json.current_time Time.now
   #end
-#end
+end
