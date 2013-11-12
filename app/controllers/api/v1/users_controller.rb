@@ -8,6 +8,10 @@ class Api::V1::UsersController < ApplicationController
     #@posts = Post.User.all
   end
   
+  def show
+    @users = User.find(params[:id])
+  end
+
   def create
   	#{post {title name body}}
 
