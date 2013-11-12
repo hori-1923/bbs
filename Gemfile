@@ -13,8 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 group :production do
- gem "therubyracer"
- gem "mysql2"
+ gem "therubyracer", :platforms => :ruby
+ gem "mysql2", '~> 0.3.13'
 end
 
 group :development, :test do
@@ -28,7 +28,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano', :require => false
+  gem 'capistrano', '~>2.15.5', :require => false
   gem 'capistrano-ext', :require => false
   gem 'capistrano_colors', :require => false
 end
